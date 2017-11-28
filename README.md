@@ -1,4 +1,6 @@
-# meet-up-event-planner
+# FlashTracker
+
+# meet-up-event-planner (original)
 On this branch project configured to be build with webpack <br/>
 Brunch build is available on the branch **brunch-build**
 
@@ -25,5 +27,4 @@ Pretty simple event planner which includes creating and deleting of events, also
 6. [ESLint](http://eslint.org/) (cool linting utility for JavaScript and JSX)
 
 ## License
-[MIT](https://www.tldrlegal.com/l/mit) Copyright (c) 2016 Dima Beznos
-# FlashTracker
+[MIT](https://www.tldrlegal.com/l/mit) Copyright (c) 2016 Dima Beznos 
