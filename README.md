@@ -1,6 +1,6 @@
 # FlashTracker
 
-# meet-up-event-planner (original)
+# meet-up-event-planner (original)  
 On this branch project configured to be build with webpack <br/>
 Brunch build is available on the branch **brunch-build**
 
