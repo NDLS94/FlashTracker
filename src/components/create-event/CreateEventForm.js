@@ -242,12 +242,6 @@ class CreateEventForm extends Component {
 						errors={this.state.errors}
 					/>
 
-					<DateTimeFields
-						onChange={this.onChangeDateField}
-						getDateObject={this.getDateObject}
-						errors={this.state.errors}
-					/>
-
 					<GuestsField
 						onBlur={this.onBlurGuests}
 						onFocus={this.onFocusGuests}
@@ -256,6 +250,21 @@ class CreateEventForm extends Component {
 						label="Guest list (press enter to add guest, click on guest to remove from list)"
 						id="guests"
 						guests={this.state.event.guests}
+						errors={this.state.errors}
+					/>
+
+					<DateTimeFields
+						onChange={this.onChangeDateField}
+						getDateObject={this.getDateObject}
+						errors={this.state.errors}
+					/>
+
+					<TextField
+						onInput={this.onChangeTextField}
+						value={this.state.event.location}
+						placeholder="Type the address of event"
+						label="Location"
+						id="location"
 						errors={this.state.errors}
 					/>
 
@@ -292,15 +301,6 @@ class CreateEventForm extends Component {
 						placeholder="Briefly describe the vendor services/supplies provided"
 						label="Vendor Services"
 						id="vendorServices"
-						errors={this.state.errors}
-					/>
-
-					<TextField
-						onInput={this.onChangeTextField}
-						value={this.state.event.location}
-						placeholder="Type the address of event"
-						label="Location"
-						id="location"
 						errors={this.state.errors}
 					/>
 
