@@ -59,7 +59,7 @@ class EventsList extends Component {
 				</div>
 				<div className="app-content">
 					<h4 className="left-align">Your events list</h4>
-					<a href="javascript:window.print();">Print Report</a>
+					<a href="javascript:window.print();" className="btn btn-fluid">Print Report</a>
 					<div className="event-list">
 						{ (this.props.events.length)
 							? this.props.events.map(event => <EventsListItem key={event.id} removeEvent={() => this.removeEvent(event.id)} {...event} />)
